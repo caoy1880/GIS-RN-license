@@ -89,7 +89,7 @@ fig = go.Figure(go.Choropleth(
 
 fig.update_layout(
     margin={"r":0,"t":40,"l":0,"b":0},
-    title=f"Nurses per 10,000 Population by County - {selected_year}",
+    title=f"RN Nurses per 10,000 Population by County - {selected_year}",
     geo=dict(
         fitbounds="locations",
         visible=True,
@@ -99,5 +99,5 @@ fig.update_layout(
 )
 
 # ========== DISPLAY ==========
-st.title("Nurses per 10,000 Population by County in Tennessee (2020–2023)")
+st.title("RN Nurses per 10,000 Population by County in Tennessee (2020–2023)")
 st.plotly_chart(fig, use_container_width=True)
